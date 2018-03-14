@@ -1,6 +1,6 @@
 # vindir
 
-> Hjemmeside for vVindir (https://www.vindir.no).
+> Hjemmeside for Vindir (https://www.vindir.no).
 
 ## Build Setup
 
