@@ -1,7 +1,7 @@
 {
   "name": "vindir",
   "version": "1.0.0",
-  "description": "Hjemmeside for vVindir (https://www.vindir.no).",
+  "description": "Hjemmeside for Vindir (https://www.vindir.no).",
   "author": "Christer Olsen <colsen1991@gmail.com>(https://www.christerolsen.me)))  (https://www.christerolsen.me)",
   "private": true,
   "scripts": {
