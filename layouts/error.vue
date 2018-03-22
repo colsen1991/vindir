@@ -16,24 +16,17 @@
 </template>
 
 <script>
-  // import generelt from '../static/data/generelt.json'
-
   export default {
-    data () {
-      return {}
-    },
     head () {
       return {
-        /*
         title: 'Ukjent feil',
         meta: [
-          { hid: 'og:title', property: 'og:title', content: `Ukjent feil - ${this.tittel}` },
-          { hid: 'description', name: 'description', content: '' },
-          { hid: 'og:description', property: 'og:description', content: '' },
-          { hid: 'og:image', property: 'og:image', content: this.bilde.url },
+          { hid: 'og:title', property: 'og:title', content: `Ukjent feil - Vindir: Web & IT og sånt` },
+          { hid: 'description', name: 'description', content: 'Vindir er et lite web- og & IT-byrå i Bodø som spesialiserer seg på skreddersydde hjemmesider og webløsninger.' },
+          { hid: 'og:description', property: 'og:description', content: 'Vindir er et lite web- og & IT-byrå i Bodø som spesialiserer seg på skreddersydde hjemmesider og webløsninger.' },
+          { hid: 'og:image', property: 'og:image', content:  },
           { hid: 'twitter:image', property: 'twitter:image', content: this.bilde.url }
         ]
-        */
       }
     }
   }

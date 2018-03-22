@@ -5,7 +5,7 @@ module.exports = {
     { src: './assets/style/index.scss', lang: 'sass' }
   ],
   loading: {
-    color: '#23d160'
+    color: '#FF7B00'
   },
   manifest: {
     name: 'Vindir: Web & IT og sånt',
@@ -13,7 +13,7 @@ module.exports = {
     display: 'standalone',
     description: 'Hjemmeside for bedriften Vindir (https://www.vindir.no). Et lite web- og IT-byrå i Bodø.',
     orientation: 'any',
-    theme_color: '#fff',
+    theme_color: '#FF7B00',
     background_color: '#fff'
   },
   modules: [
