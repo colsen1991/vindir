@@ -1,77 +1,100 @@
 <template>
   <div>
-    <section id="banner" class="hero is-info">
+    <section id="banner" class="hero is-image is-fullheight"
+             v-lazy:background-image="'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=format&q=35&w=1920'">
       <div class="hero-body">
         <div class="container">
-          <header>
-            <h1 class="title">PWA Plus template</h1>
-          </header>
+          <div class="columns">
+            <div class="column is-image-text content is-medium has-text-centered-mobile">
+              <header>
+                <h1 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h1>
+              </header>
 
-          <div class="content is-medium">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-              libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-            </p>
-            <p>
-              Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-              libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-            </p>
+              <p class="is-size-3 is-size-4-mobile">
+                Skreddersydd til dine behov, både teknisk og visuelt, og levert av en prosess som er 100% fri for mannskit!
+              </p>
+            </div>
+            <div class="column is-flex justify-centered align-center">
+              <div class="buttons is-centered">
+                <a href="#tjenester" class="button is-large is-outlined is-dark">Les mer</a>
+                <a href="#kontakt" class="button is-large is-outlined is-primary">Ta kontakt</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="lorem" class="hero">
+    <section id="tjenester" class="hero is-medium is-dark">
       <div class="hero-body">
-        <div class="container">
+        <div class="container has-text-centered content">
           <header>
-            <h2 class="title">Lorem</h2>
+            <h2>Tjenester</h2>
           </header>
-
-          <div class="content is-medium">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-              libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-            </p>
-
-            <section id="ipsum">
-              <header>
-                <h3>Ipsum</h3>
-              </header>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-                libero, luctus id nulla quis, ultrices pharetra erat.
-              </p>
-            </section>
-
-            <section id="dolor">
-              <header>
-                <h3>Dolor</h3>
-              </header>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-                libero, luctus id nulla quis, ultrices pharetra erat. Scelerisque sit amet porta et, tincidunt at ante. Quisque sem.
-              </p>
-            </section>
+          <div class="columns">
+            <div class="column">
+              <div class="icon">
+                <i class="fas fa-cubes"></i>
+              </div>
+              <h3>Totalleverandør</h3>
+              <div>
+                <p>Jeg leverer hjemmesider og nettløsninger fra A til Å; fra planlegging, domenekjøp, design, utvikling, installasjon og drift!</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Konsulent</h3>
+              <div>
+                <p>Jeg har flere års erfaring og er utdannet dataingeniør og IKT-servicemedarbeider, og byr gjerne på min kunnskap.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="icon">
+                <i class="fas fa-book"></i>
+              </div>
+              <h3>Kurs</h3>
+              <div>
+                <p>Trenger du eller din bedrift et kompetanseløft? Jeg kommer gjerne innom og holder et kurs for dere!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="sit" class="hero is-light">
+    <section id="kontakt" class="hero is-medium">
       <div class="hero-body">
         <div class="container">
-          <header>
-            <h2 class="title">Sit</h2>
+          <header class="content has-text-centered">
+            <h2>Kontakt</h2>
+            <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
           </header>
 
-          <div class="content is-medium">
-            <p>
-              Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-              libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-            </p>
-          </div>
+          <form method="post" name="contact" action="#takk" netlify-honeypot="bortgjemt" netlify>
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input id="cf_details"
+                       title="Epost/Telefon"
+                       name="Epost/Telefon"
+                       class="input is-large"
+                       type="text"
+                       placeholder="Epost/Telefon"
+                       required>
+              </div>
+              <div class="control">
+                <button type="submit" class="button is-primary is-large">Send inn</button>
+              </div>
+            </div>
+
+            <input class="is-hidden" name="bortgjemt">
+            <input type="hidden" name="form-name" value="contact"/>
+          </form>
         </div>
+      </div>
+      <div id="takk"  class="has-text-centered content">
+        <h2>Takk!</h2>
+        <p>Tusen takk for at du tok kontakt! Du hører fra meg snart.</p>
+        <a href="#" class="button is-large is-primary">Lukk</a>
       </div>
     </section>
   </div>
@@ -79,9 +102,58 @@
 
 <script>
   export default {
-    head: {
-      title: 'Forsiden',
-      link: [ { hid: 'canonical', rel: 'canonical', href: '{{ site_domain }}' } ]
+    head () {
+      return {
+        title: 'Vindir: Web & IT og sånt',
+        meta: [
+          { hid: 'og:title', property: 'og:title', content: `Vindir: Web & IT og sånt` },
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no' }
+        ]
+      }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .buttons {
+    .button {
+      min-width: 160px;
+    }
+  }
+
+  #tjenester {
+    .icon {
+      width: 8rem;
+      height: 8rem;
+
+      * {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  #takk {
+    display: none;
+    position: fixed;
+    top: calc(50vh - 130px);
+    left: calc(50vw - 130px);
+    z-index: 100;
+    width: 260px;
+    height: 260px;
+    background-color: #EBEBEB;
+    padding: 1rem;
+
+    &:target {
+      display: block;
+    }
+
+    .button {
+      width: 160px;
+    }
+  }
+</style>

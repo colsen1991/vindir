@@ -1,1 +1,41 @@
+.hero.is-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  .is-image-text {
+    * {
+      color: #222725 !important;
+      text-shadow: 1px 1px #EBEBEB;
+    }
+  }
+
+  &[lazy=loading] {
+    background-size: 20%;
+  }
+}
+
+.has-text-script {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.is-flex {
+  &.direction-column {
+    flex-direction: column;
+  }
+
+  &.justify-centered {
+    justify-content: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}
+
+.icon {
+  &.is-huge {
+    width: 5rem;
+    height: 5rem;
+  }
+}

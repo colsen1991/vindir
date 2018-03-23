@@ -17,11 +17,37 @@ h1, h2, h3, h4, h5, .title, .subtitle {
   font-family: 'Roboto Slab', sans-serif;
 }
 
-.text-script {
-  font-family: 'Roboto Condensed', sans-serif;
+blockquote {
+  font-family: 'Roboto Mono', monospace;
 }
 
-blockquote,
-.text-mono {
-  font-family: 'Roboto Mono', monospace;
+.button {
+  border-radius: 0 !important;
+}
+
+.is-outlined {
+  border-width: 3px !important;
+  background-color: rgba(34, 39, 37, .15) !important;
+}
+
+@media only screen and (max-width: 512px) {
+  .buttons:not(.is-mobile) {
+    flex-direction: column;
+
+    .button {
+      margin-right: 0;
+    }
+  }
+}
+
+.input {
+  border-radius: 0 !important;
+}
+
+.is-dark {
+  .content {
+    * {
+      color: #EBEBEB !important;
+    }
+  }
 }

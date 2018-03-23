@@ -5,15 +5,15 @@ module.exports = {
     { src: './assets/style/index.scss', lang: 'sass' }
   ],
   loading: {
-    color: '#FF7B00'
+    color: '#ff6a00'
   },
   manifest: {
     name: 'Vindir: Web & IT og sånt',
     short_name: 'Vindir',
     display: 'standalone',
-    description: 'Hjemmeside for bedriften Vindir (https://www.vindir.no). Et lite web- og IT-byrå i Bodø.',
+    description: 'Hjemmeside for bedriften Vindir. Et lite web- og IT-byrå i Bodø.',
     orientation: 'any',
-    theme_color: '#FF7B00',
+    theme_color: '#FF6A00',
     background_color: '#fff'
   },
   modules: [
@@ -36,20 +36,19 @@ module.exports = {
   ],
   head: {
     htmlAttrs: { lang: 'nb-NO' },
-    titleTemplate: '%s - Vindir: Web & IT og sånt',
     script: [ { src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', type: 'text/javascript', async: true } ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'author', href: '/humans.txt' },
+      { rel: 'author', href: '/humans.txt' }
     ],
     meta: [
-      { hid: 'description', name: 'description', content: 'Hjemmeside for bedriften Vindir (https://www.vindir.no). Et lite web- og IT-byrå i Bodø.' },
-      { name: 'theme-color', content: '#fff' },
+      { hid: 'description', name: 'description', content: 'Hjemmeside for bedriften Vindir. Et lite web- og IT-byrå i Bodø.' },
+      { name: 'theme-color', content: '#FF6A00' },
       { hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt' },
-      { hid: 'og:description', property: 'og:description', content: 'Hjemmeside for bedriften Vindir (https://www.vindir.no). Et lite web- og IT-byrå i Bodø.' },
+      { hid: 'og:description', property: 'og:description', content: 'Hjemmeside for bedriften Vindir. Et lite web- og IT-byrå i Bodø.' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image', property: 'og:image', content: 'https://www.vindir.no/logo.png' },
-      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.vindir.no/logo.png' },
+      { hid: 'og:image', property: 'og:image', content: 'https://www.datocms-assets.com/4973/1521131795-og-image.jpg' },
+      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.datocms-assets.com/4973/1521131795-og-image.jpg' },
       { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
       { name: 'robots', content: 'index, follow' }
     ]
