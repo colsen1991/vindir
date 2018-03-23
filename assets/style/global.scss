@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab');
+
 body {
   min-height: 100vh;
+  font-size: 1.25rem;
 }
 
 main {
@@ -7,13 +10,44 @@ main {
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, .title, .subtitle {
-  font-family: 'Saira', sans-serif !important;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
-.text-script {
-  font-family: 'Seaweed Script', cursive !important;
+blockquote {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.button {
+  border-radius: 0 !important;
+}
+
+.is-outlined {
+  border-width: 3px !important;
+  background-color: rgba(34, 39, 37, .15) !important;
+}
+
+@media only screen and (max-width: 512px) {
+  .buttons:not(.is-mobile) {
+    flex-direction: column;
+
+    .button {
+      margin-right: 0;
+    }
+  }
+}
+
+.input {
+  border-radius: 0 !important;
+}
+
+.is-dark {
+  .content {
+    * {
+      color: #EBEBEB !important;
+    }
+  }
 }
