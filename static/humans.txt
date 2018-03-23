@@ -1,9 +1,9 @@
 /* TEAM */
-Your title: .
-Location: .
+Your title: Christer Olsen.
+Location: Bodø, Norway.
 Site: https://www.christerolsen.me
 
 /* SITE */
-Last update: 2042/12/24
+Last update: 2018/03/15
 Standards: HTML5, CSS3, JavaScript.
 Software: git, node, npm, vue, nuxt.
