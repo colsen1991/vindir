@@ -47,8 +47,8 @@ module.exports = {
       { hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt' },
       { hid: 'og:description', property: 'og:description', content: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image', property: 'og:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&w=1920' },
-      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&w=1920' },
+      { hid: 'og:image', property: 'og:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920' },
+      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920' },
       { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
       { name: 'robots', content: 'index, follow' }
     ]

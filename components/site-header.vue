@@ -1,10 +1,10 @@
 <template>
-  <header class="navbar">
+  <header class="navbar is-light">
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
           <figure class="image is-48x48">
-            <img alt="Site Logo" v-lazy="'https://www.datocms-assets.com/4973/1521131822-logo.png?w=48&h=48'">
+            <img alt="Site Logo" v-lazy="'https://www.datocms-assets.com/4973/1521131822-logo.png?auto=compress&w=48&h=48'">
           </figure>
           <h1 class="has-text-script is-italic is-size-3">VINDIR</h1>
           &nbsp;

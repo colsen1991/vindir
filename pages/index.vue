@@ -1,7 +1,8 @@
 <template>
   <div>
-    <section id="banner" class="hero is-image is-fullheight"
-             v-lazy:background-image="'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=format&q=35&w=1920'">
+    <section id="banner"
+             class="hero is-image is-fullheight"
+             v-lazy:background-image="'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
@@ -16,8 +17,8 @@
             </div>
             <div class="column is-flex justify-centered align-center">
               <div class="buttons is-centered">
-                <a href="#tjenester" class="button is-large is-outlined is-dark">Les mer</a>
-                <a href="#kontakt" class="button is-large is-outlined is-primary">Ta kontakt</a>
+                <a href="#tjenester" class="button is-large is-dark">Les mer</a>
+                <a href="#kontakt" class="button is-large is-primary">Ta kontakt</a>
               </div>
             </div>
           </div>
@@ -70,7 +71,7 @@
             <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
           </header>
 
-          <form method="post" name="contact" action="#takk" netlify-honeypot="bortgjemt" netlify>
+          <form method="post" name="contact" action="/kontakt/takk" netlify-honeypot="bortgjemt" netlify>
             <div class="field has-addons has-addons-centered">
               <div class="control">
                 <input id="cf_details"
@@ -90,11 +91,6 @@
             <input type="hidden" name="form-name" value="contact"/>
           </form>
         </div>
-      </div>
-      <div id="takk"  class="has-text-centered content">
-        <h2>Takk!</h2>
-        <p>Tusen takk for at du tok kontakt! Du hører fra meg snart.</p>
-        <a href="#" class="button is-large is-primary">Lukk</a>
       </div>
     </section>
   </div>
@@ -154,6 +150,15 @@
 
     .button {
       width: 160px;
+    }
+
+    .background {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgba(10, 10, 10, 0.86);
     }
   }
 </style>
