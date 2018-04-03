@@ -6,9 +6,9 @@
         <div class="container">
           <div class="columns">
             <div class="column is-image-text content is-medium has-text-centered-mobile">
-              <header>
+              <headere>
                 <h1 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h1>
-              </header>
+              </headere>
 
               <p class="is-size-3 is-size-4-mobile">
                 Skreddersydd til dine behov, både teknisk og visuelt, og levert av en prosess som er 100% fri for mannskit!
