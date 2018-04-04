@@ -3,10 +3,17 @@
 body {
   min-height: 100vh;
   font-size: 1.25rem;
+  background-image: url('https://www.datocms-assets.com/4973/1522832093-bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 main {
   min-height: 64vh;
+  margin-top: 64px;
+  display: block;
 }
 
 * {

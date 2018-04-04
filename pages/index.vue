@@ -7,17 +7,14 @@
         <div class="container">
           <div class="columns">
             <div class="column is-image-text content is-medium has-text-centered-mobile">
-              <headere>
-                <h1 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h1>
-              </headere>
-
+              <h2 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h2>
               <p class="is-size-3 is-size-4-mobile">
                 Skreddersydd til dine behov, både teknisk og visuelt, og levert av en prosess som er 100% fri for mannskit!
               </p>
             </div>
             <div class="column is-flex justify-centered align-center">
               <div class="buttons is-centered">
-                <a href="#tjenester" class="button is-large is-dark">Les mer</a>
+                <a href="#tjenester" class="button is-large is-info">Les mer</a>
                 <a href="#kontakt" class="button is-large is-primary">Ta kontakt</a>
               </div>
             </div>
@@ -25,12 +22,11 @@
         </div>
       </div>
     </section>
+    <div class="spacer"></div>
     <section id="tjenester" class="hero is-medium is-dark">
       <div class="hero-body">
         <div class="container has-text-centered content">
-          <header>
-            <h2>Tjenester</h2>
-          </header>
+          <h2 class="is-size-2 is-size-3-mobile">Tjenester</h2>
           <div class="columns">
             <div class="column">
               <div class="icon">
@@ -63,14 +59,14 @@
         </div>
       </div>
     </section>
-    <section id="kontakt" class="hero is-medium">
+    <div class="spacer"></div>
+    <section id="kontakt" class="hero is-medium is-light">
       <div class="hero-body">
         <div class="container">
-          <header class="content has-text-centered">
-            <h2>Kontakt</h2>
+          <div class="content has-text-centered">
+            <h2 class="is-size-2 is-size-3-mobile">Kontakt</h2>
             <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
-          </header>
-
+          </div>
           <form method="post" name="contact" action="/kontakt/takk" netlify-honeypot="bortgjemt" netlify>
             <div class="field has-addons has-addons-centered">
               <div class="control">
@@ -93,6 +89,7 @@
         </div>
       </div>
     </section>
+    <div class="spacer"></div>
   </div>
 </template>
 

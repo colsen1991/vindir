@@ -43,3 +43,14 @@
 .margin-bottom-1 {
   margin-bottom: 1rem;
 }
+
+.hero {
+  &.is-page-header {
+    background: linear-gradient(141deg, #2E8CC9 0%, #0073BD 51%, #005F9B 75%);
+    color: white;
+  }
+}
+
+.spacer {
+  padding: 3rem;
+}
