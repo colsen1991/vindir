@@ -1,12 +1,22 @@
 <template>
-  <section class="hero is-large">
-    <div class="hero-body">
-      <div class="container content has-text-centered">
-        <h2 class="is-size-1 is-size-2-mobile">404 - Siden finnes ikke</h2>
-        <p>Usikker på hvordan dette gikk til...</p>
-        <p class="is-size-2 is-size-3-mobile">¯\_(ツ)_/¯</p>
-        <p>Beklager det!</p>
-        <nuxt-link to="/">Tilbake til forsiden</nuxt-link>
+  <section>
+    <div class="hero is-page-header space-below">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h2 class="is-size-1 is-size-2-mobile">
+            <page-header-text>404 - Siden finnes ikke</page-header-text>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="hero is-dark space-below">
+      <div class="hero-body is-dark">
+        <div class="container content has-text-centered">
+          <p class="is-size-2 is-size-3-mobile">¯\_(ツ)_/¯</p>
+          <p>Usikker på hvordan dette gikk til...</p>
+          <p>Beklager det!</p>
+          <nuxt-link to="/" class="button is-link is-large">Tilbake til forsiden</nuxt-link>
+        </div>
       </div>
     </div>
   </section>

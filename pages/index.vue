@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="banner"
-             class="hero is-image is-fullheight"
+             class="hero is-image is-fullheight space-below"
              v-lazy:background-image="'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'">
       <div class="hero-body">
         <div class="container">
@@ -22,8 +22,7 @@
         </div>
       </div>
     </section>
-    <div class="spacer"></div>
-    <section id="tjenester" class="hero is-medium is-dark">
+    <section id="tjenester" class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <div class="container has-text-centered content">
           <h2 class="is-size-2 is-size-3-mobile">Tjenester</h2>
@@ -59,8 +58,7 @@
         </div>
       </div>
     </section>
-    <div class="spacer"></div>
-    <section id="kontakt" class="hero is-medium is-light">
+    <section id="kontakt" class="hero is-medium is-light space-below">
       <div class="hero-body">
         <div class="container">
           <div class="content has-text-centered">
@@ -89,7 +87,6 @@
         </div>
       </div>
     </section>
-    <div class="spacer"></div>
   </div>
 </template>
 
