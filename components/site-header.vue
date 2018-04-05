@@ -10,7 +10,7 @@
           </figure>
           <h1 class="has-text-script is-italic is-size-3">VINDIR</h1>
           &nbsp;
-          <span class="has-text-script is-size-6 is-size-7-mobile">- Web & IT og sånt</span>
+          <span class="has-text-script is-size-7">- Web & IT og sånt</span>
         </nuxt-link>
 
         <span class="navbar-burger"

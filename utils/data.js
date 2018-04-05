@@ -1,25 +1,19 @@
-import generelt from '../static/data/generelt.json'
-
-async function getData (payload, fetchPath, importPath, error) {
+async function getData (payload, path, error) {
   if (payload) {
-    return {
-      ...payload,
-      url: generelt.url,
-      sidetittel: generelt.tittel
-    }
+    return payload
   }
 
   if (process.client) {
     try {
-      const response = await fetch(`/data/${fetchPath}`)
+      const response = await fetch(`/data/${path}`)
       return await response.json()
     } catch (e) {
-      error()
+      error(e)
     }
   }
 
   if (process.server) {
-    return require(`../static/data/${importPath}`)
+    return require(`../static/data/${path}`)
   }
 }
 

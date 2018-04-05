@@ -1,7 +1,32 @@
 module.exports = (dato, root) => {
   root.directory('static/data', (dataDir) => {
-    dataDir.createPost('todo-changeme.json', 'json', {
-      frontmatter: {}
+
+    let bloggliste = []
+
+    dato.blogPosts.forEach(blogPost => {
+      const blogPostObject = blogPost.toMap()
+
+      bloggliste.push({
+        id: blogPostObject.id,
+        date: blogPostObject.createdAt,
+        title: blogPostObject.title,
+        slug: blogPostObject.slug,
+        image: blogPostObject.image,
+        excerpt: blogPostObject.excerpt,
+        tag: blogPostObject.tag.tag
+      })
+
+      dataDir.createPost(`blogg/${blogPostObject.slug}.json`, 'json', {
+        frontmatter: {
+          ...blogPostObject
+        }
+      })
+    })
+
+    dataDir.createPost(`blogg.json`, 'json', {
+      frontmatter: {
+        liste: bloggliste
+      }
     })
   })
 }

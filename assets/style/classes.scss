@@ -3,10 +3,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  &.is-sooted .hero-body {
+    background-color: rgba(0, 0, 0, .5);
+
+    * {
+      color: whitesmoke;
+    }
+  }
+
   .is-image-text {
     * {
       color: #222725 !important;
-      text-shadow: 1px 1px #EBEBEB;
+      text-shadow: 1px 1px #EBEBEB !important;
     }
   }
 
@@ -44,6 +52,10 @@
   margin-bottom: 1rem;
 }
 
+.margin-right-1 {
+  margin-right: 1rem;
+}
+
 .hero {
   &.is-page-header {
     background: linear-gradient(141deg, #2E8CC9 0%, #0073BD 51%, #005F9B 75%);
@@ -58,3 +70,17 @@
 .background-light {
   background-color: whitesmoke;
 }
+
+.background-dark {
+  background-color: #222725;
+  color: whitesmoke;
+}
+
+.padded {
+  padding: 1.5rem;
+}
+
+.is-paddingless-top {
+  padding-top: 0 !important;
+}
+

@@ -1,3 +1,5 @@
+const bloggliste = require('./static/data/blogg.json').liste
+
 const isStatic = !!process.env.STATIC
 
 module.exports = {
@@ -28,11 +30,14 @@ module.exports = {
       }
     },
     extractCSS: true,
-    vendor: []
+    vendor: [
+      'whatwg-fetch'
+    ]
   },
   plugins: [
     './plugins/components',
-    './plugins/lazyload'
+    './plugins/lazyload',
+    './plugins/responsive'
   ],
   head: {
     htmlAttrs: { lang: 'nb-NO' },
@@ -42,19 +47,40 @@ module.exports = {
       { rel: 'author', href: '/humans.txt' }
     ],
     meta: [
-      { hid: 'description', name: 'description', content: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.'
+      },
       { name: 'theme-color', content: '#FF6A00' },
       { hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt' },
-      { hid: 'og:description', property: 'og:description', content: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.'
+      },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image', property: 'og:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920' },
-      { hid: 'twitter:image', property: 'twitter:image', content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'
+      },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'
+      },
       { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
       { name: 'robots', content: 'index, follow' }
     ]
   },
   generate: {
-    routes: []
+    routes: bloggliste.map(blogginnlegg => {
+      return {
+        route: blogginnlegg.slug,
+        payload: blogginnlegg
+      }
+    })
   },
   sitemap: {
     path: '/sitemap.xml',

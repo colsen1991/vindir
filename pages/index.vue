@@ -22,7 +22,7 @@
         </div>
       </div>
     </section>
-    <section id="tjenester" class="hero is-medium is-dark space-below">
+    <section id="tjenester" class="hero is-dark space-below">
       <div class="hero-body">
         <div class="container has-text-centered content">
           <h2 class="is-size-2 is-size-3-mobile">Tjenester</h2>
@@ -58,13 +58,11 @@
         </div>
       </div>
     </section>
-    <section id="kontakt" class="hero is-medium is-light space-below">
+    <section id="kontakt" class="hero is-light  space-below">
       <div class="hero-body">
-        <div class="container">
-          <div class="content has-text-centered">
-            <h2 class="is-size-2 is-size-3-mobile">Kontakt</h2>
-            <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
-          </div>
+        <div class="container content has-text-centered">
+          <h2 class="is-size-2 is-size-3-mobile">Kontakt</h2>
+          <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
           <form method="post" name="contact" action="/kontakt/takk" netlify-honeypot="bortgjemt" netlify>
             <div class="field has-addons has-addons-centered">
               <div class="control">
@@ -84,9 +82,43 @@
             <input class="is-hidden" name="bortgjemt">
             <input type="hidden" name="form-name" value="contact"/>
           </form>
+          <p class="is-size-7">
+            Dette melder deg <b>ikke</b> inn noe nyhetsbrev e.l.
+            Mer kontaktinformasjon nederst på siden.
+          </p>
         </div>
       </div>
     </section>
+    <section class="hero space-below is-dark">
+      <div class="hero-body">
+        <div class="container content has-text-centered">
+          <h2 class="is-size-2 is-size-3-mobile">Vil du følge med på siste nytt?</h2>
+          <p>Meld deg på nyhetsbrevet!</p>
+          <form method="post" name="newsletter" action="/nyhetsbrev/takk" netlify-honeypot="bortgjemt" netlify>
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input title="Epost"
+                       name="Epost"
+                       class="input is-large"
+                       type="email"
+                       placeholder="Epost"
+                       required>
+              </div>
+              <div class="control">
+                <button type="submit" class="button is-primary is-large">Send inn</button>
+              </div>
+            </div>
+
+            <input class="is-hidden" name="bortgjemt">
+            <input type="hidden" name="form-name" value="contact"/>
+          </form>
+          <p class="is-size-7">
+            Nyhetsbrevet inneholder bare relevante artikler og fagstoff og sendes ut maksimalt en gang i måneden.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
