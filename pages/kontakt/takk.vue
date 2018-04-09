@@ -3,9 +3,7 @@
     <div class="hero-body">
       <div class="container content has-text-centered">
         <div class="is-image-text margin-bottom-1">
-          <header>
-            <h1>Takk ツ</h1>
-          </header>
+          <h1>Takk ツ</h1>
           <p>Tusen takk for at du tok kontakt! Jeg svarer deg så snart jeg kan!</p>
         </div>
         <nuxt-link to="/" class="button is-large is-primary">Tilbake til forsiden</nuxt-link>

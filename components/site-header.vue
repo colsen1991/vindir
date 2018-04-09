@@ -8,7 +8,7 @@
                  title="Vindir"
                  v-lazy="'https://www.datocms-assets.com/4973/1521131822-logo.png?auto=compress&w=48&h=48'">
           </figure>
-          <h1 class="has-text-script is-italic is-size-3">VINDIR</h1>
+          <span class="has-text-script is-italic is-size-3">VINDIR</span>
           &nbsp;
           <span class="has-text-script is-size-7">- Web & IT og sånt</span>
         </nuxt-link>

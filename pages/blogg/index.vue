@@ -3,9 +3,9 @@
     <div class="hero is-page-header space-below">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h2 class="is-size-1 is-size-2-mobile">
+          <h1 class="is-size-1 is-size-2-mobile">
             <page-header-text>Blogg</page-header-text>
-          </h2>
+          </h1>
         </div>
       </div>
     </div>
@@ -14,7 +14,7 @@
         <nuxt-link :to="`/blogg/${blogginnlegg.slug}`">
           <header class="hero is-medium is-image is-sooted" v-lazy:background-image="$createSrc(blogginnlegg.image.url, 1920)">
             <div class="hero-body has-text-light has-text-centered">
-              <h3 class="is-size-2 is-size-3-mobile">{{blogginnlegg.title}}</h3>
+              <h2 class="is-size-2 is-size-3-mobile">{{blogginnlegg.title}}</h2>
             </div>
           </header>
         </nuxt-link>

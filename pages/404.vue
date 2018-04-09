@@ -1,10 +1,10 @@
 <template>
-  <section class="hero is-fullheight is-dark">
+  <section class="hero is-fullheight is-white">
     <div class="hero-body">
       <div class="container content has-text-centered">
-        <h2 class="is-size-1 is-size-2-mobile">
+        <h1 class="is-size-1 is-size-2-mobile">
           <page-header-text>404 - Siden finnes ikke</page-header-text>
-        </h2>
+        </h1>
         <p class="is-size-2 is-size-3-mobile">¯\_(ツ)_/¯</p>
         <p>Usikker på hvordan du havnet her...</p>
         <p>Beklager det!</p>

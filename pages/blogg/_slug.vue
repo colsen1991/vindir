@@ -4,9 +4,9 @@
       <header class="hero is-image is-sooted space-below" v-lazy:background-image="$createSrc(image.url, 1920)">
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h2 class="is-size-1 is-size-2-mobile">
+            <h1 class="is-size-1 is-size-2-mobile">
               {{title}}
-            </h2>
+            </h1>
           </div>
         </div>
       </header>
@@ -51,6 +51,7 @@
                 </span>
               </span>
             </div>
+            <vue-disqus shortname="vindir" :identifier="slug" :url="`https://www.vindir.no/blogg/${slug}`" />
           </div>
         </div>
       </footer>
