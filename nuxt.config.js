@@ -89,7 +89,9 @@ module.exports = {
     generate: isStatic,
     routes: bloggliste.map(({ slug }) => `/blogg/${slug}`),
     exclude: [
-      '/404'
+      '/404',
+      '/kontakt/takk',
+      '/nyhetsbrev/takk'
     ]
   },
   workbox: {
