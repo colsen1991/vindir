@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-fullheight is-white">
+  <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container content has-text-centered">
         <h1 class="is-size-1 is-size-2-mobile">
