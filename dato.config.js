@@ -6,6 +6,8 @@ module.exports = (dato, root) => {
     dato.blogPosts.forEach(blogPost => {
       const blogPostObject = blogPost.toMap()
 
+      delete blogPostObject.seoMetaTags
+
       bloggliste.push({
         id: blogPostObject.id,
         date: blogPostObject.createdAt,

@@ -75,10 +75,10 @@ module.exports = {
     ]
   },
   generate: {
-    routes: bloggliste.map(blogginnlegg => {
+    routes: bloggliste.map(({ slug }) => {
       return {
-        route: blogginnlegg.slug,
-        payload: blogginnlegg
+        route: `/blogg/${slug}`,
+        payload: require(`./static/data/blogg/${slug}.json`)
       }
     })
   },
@@ -87,7 +87,7 @@ module.exports = {
     hostname: 'https://www.vindir.no',
     cacheTime: 1000 * 60 * 15,
     generate: isStatic,
-    routes: [],
+    routes: bloggliste.map(({ slug }) => `/blogg/${slug}`),
     exclude: [
       '/404'
     ]
