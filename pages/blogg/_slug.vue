@@ -89,7 +89,7 @@
                 </div>
 
                 <input class="is-hidden" name="bortgjemt">
-                <input type="hidden" name="form-name" value="contact"/>
+                <input type="hidden" name="form-name" value="newsletter"/>
               </form>
               <p class="is-size-7">
                 Nyhetsbrevet inneholder bare relevante artikler og fagstoff og sendes ut maksimalt en gang i måneden.
