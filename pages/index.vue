@@ -9,7 +9,7 @@
             <div class="column is-image-text content is-medium has-text-centered-mobile">
               <h1 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h1>
               <p class="is-size-3 is-size-4-mobile">
-                Skreddersydd til dine behov, både teknisk og visuelt, og levert av en prosess som er 100% fri for mannskit!
+                Skreddersydd til dine behov, både teknisk og visuelt, og levert av en smidig og moderne prosess!
               </p>
             </div>
             <div class="column is-flex justify-centered align-center">
