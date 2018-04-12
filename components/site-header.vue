@@ -36,6 +36,11 @@
             &nbsp;
             <span>BLOGG</span>
           </nuxt-link>
+          <nuxt-link to="/blogg" class="navbar-item">
+            <i class="far fa-id-card"></i>
+            &nbsp;
+            <span>KONTAKT</span>
+          </nuxt-link>
         </nav>
       </div>
     </div>

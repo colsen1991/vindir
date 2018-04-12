@@ -60,19 +60,16 @@
     <section class="hero is-light space-below">
       <div class="hero-body">
         <div class="container">
-          <div class="columns content">
-            <div class="column has-text-centered is-flex direction-column justify-centered">
+          <div class="columns content has-text-centered is-centered">
+            <div class="column">
               <h2 class="is-size-2 is-size-3-mobile">Vil du lære flere tips og triks?</h2>
               <p>
                 <nuxt-link to="/blogg" class="button is-large is-info">Les flere innlegg</nuxt-link>
               </p>
             </div>
 
-            <div class="is-divider-vertical is-hidden-mobile" data-content="ELLER"></div>
-            <div class="is-divider is-hidden-tablet" data-content="ELLER"></div>
-
-            <div class="column has-text-centered">
-              <p>Meld deg på nyhetsbrevet!</p>
+            <div class="column">
+              <h2 class="is-size-2 is-size-3-mobile">Eller meld deg på nyhetsbrevet!</h2>
               <form method="post" name="newsletter" action="/nyhetsbrev/takk" netlify-honeypot="bortgjemt" netlify>
                 <div class="field has-addons has-addons-centered">
                   <div class="control">

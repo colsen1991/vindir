@@ -22,7 +22,7 @@
         </div>
       </div>
     </section>
-    <section id="tjenester" class="hero is-dark space-below">
+    <section id="tjenester" class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <div class="container has-text-centered content">
           <h2 class="is-size-2 is-size-3-mobile">Tjenester</h2>
@@ -58,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section id="kontakt" class="hero is-light  space-below">
+    <section id="kontakt" class="hero is-medium is-light  space-below">
       <div class="hero-body">
         <div class="container content has-text-centered">
           <h2 class="is-size-2 is-size-3-mobile">Kontakt</h2>
