@@ -15,7 +15,7 @@
           <div class="columns is-centered">
             <section class="column content has-text-centered">
               <h2 class="is-size-2 is-size-3-mobile">Ta kontakt</h2>
-              <adress>
+              <address>
                 <p>
                   <span class="icon"><i class="fas fa-map-marker is-hidden-tablet"></i></span>
                   <br class="is-hidden-tablet">
@@ -44,7 +44,7 @@
                     fb.me/vindirweb
                   </a>
                 </p>
-              </adress>
+              </address>
             </section>
 
             <section class="column content has-text-centered">
