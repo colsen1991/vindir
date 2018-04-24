@@ -12,7 +12,7 @@
         <div class="column">
           <span class="icon"><i class="fas fa-envelope"></i></span>
           <br>
-          <a href="mailto:christer@vindir.com">
+          <a href="mailto:christer@vindir.no">
             christer@vindir.no
           </a>
         </div>
