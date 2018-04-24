@@ -52,8 +52,8 @@ blockquote {
 
 .is-dark {
   .content {
-    *:not(input) {
-      color: #EBEBEB !important;
+    *:not(input):not(blockquote) {
+      color: #EBEBEB;
     }
   }
 }
@@ -63,6 +63,18 @@ blockquote {
 
   &:hover {
     color: #EBEBEB !important;
+  }
+}
+
+blockquote {
+  overflow: auto;
+  white-space: nowrap;
+  color: #222725 !important;
+  width: fit-content;
+  max-width: calc(100vw - 3rem);
+
+  * {
+    color: #222725 !important;
   }
 }
 
