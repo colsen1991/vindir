@@ -31,20 +31,20 @@
            @click="hideNavbarMenu"
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
+          <nuxt-link to="/tjenester" class="navbar-item">
+            <i class="fas fa-cogs"></i>&nbsp;<span>TJENESTER</span>
+          </nuxt-link>
+
           <nuxt-link to="/blogg" class="navbar-item">
-            <i class="fas fa-book"></i>
-            &nbsp;
-            <span>BLOGG</span>
+            <i class="fas fa-book"></i>&nbsp;<span>BLOGG</span>
           </nuxt-link>
+
           <nuxt-link to="/kontakt" class="navbar-item">
-            <i class="far fa-id-card"></i>
-            &nbsp;
-            <span>KONTAKT</span>
+            <i class="far fa-id-card"></i>&nbsp;<span>KONTAKT</span>
           </nuxt-link>
+
           <nuxt-link to="/nyhetsbrev" class="navbar-item">
-            <i class="far fa-newspaper"></i>
-            &nbsp;
-            <span>NYHETSBREV</span>
+            <i class="far fa-newspaper"></i>&nbsp;<span>NYHETSBREV</span>
           </nuxt-link>
         </nav>
       </div>
