@@ -1,14 +1,6 @@
 <template>
   <div>
-    <div class="hero is-page-header space-below">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="is-size-1 is-size-2-mobile">
-            <page-header-text>Blogg</page-header-text>
-          </h1>
-        </div>
-      </div>
-    </div>
+    <page-header>Blogg</page-header>
     <div class="container">
       <article class="blog-post space-below" v-for="(blogginnlegg, i) in liste" :key="blogginnlegg.id">
         <nuxt-link :to="`/blogg/${blogginnlegg.slug}`">
