@@ -47,11 +47,12 @@ blockquote {
 
 .input {
   border-radius: 0 !important;
+  color: #222725 !important;
 }
 
 .is-dark {
   .content {
-    * {
+    *:not(input) {
       color: #EBEBEB !important;
     }
   }
