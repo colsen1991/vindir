@@ -9,28 +9,28 @@
               <h2 class="is-size-2 is-size-3-mobile">Ta kontakt</h2>
               <address>
                 <p>
-                  <span class="icon"><i class="fas fa-map-marker is-hidden-tablet"></i></span>
+                  <span class="icon is-hidden-tablet"><i class="fas fa-map-marker"></i></span>
                   <br class="is-hidden-tablet">
                   <a href="https://goo.gl/maps/RYExmBRPKxA2" target="_blank" rel="noopener nofollow">
                     Sjøgata 15/17, 8006 Bodø
                   </a>
                 </p>
                 <p>
-                  <span class="icon"><i class="fas fa-envelope is-hidden-tablet"></i></span>
+                  <span class="icon is-hidden-tablet"><i class="fas fa-envelope"></i></span>
                   <br class="is-hidden-tablet">
                   <a href="mailto:christer@vindir.com">
                     christer@vindir.no
                   </a>
                 </p>
                 <p>
-                  <span class="icon"><i class="fas fa-phone is-hidden-tablet"></i></span>
+                  <span class="icon is-hidden-tablet"><i class="fas fa-phone"></i></span>
                   <br class="is-hidden-tablet">
                   <a href="tel:+4747895010">
                     47 89 50 10
                   </a>
                 </p>
                 <p>
-                  <span class="icon"><i class="fab fa-facebook-f is-hidden-tablet"></i></span>
+                  <span class="icon is-hidden-tablet"><i class="fab fa-facebook-f"></i></span>
                   <br class="is-hidden-tablet">
                   <a href="https://www.fb.me/vindirweb" rel="noopener nofollow" target="_blank">
                     fb.me/vindirweb
