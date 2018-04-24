@@ -1,14 +1,6 @@
 <template>
   <div>
-    <div class="hero is-page-header space-below">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="is-size-1 is-size-2-mobile">
-            <page-header-text>Kontakt</page-header-text>
-          </h1>
-        </div>
-      </div>
-    </div>
+    <page-header>Kontakt</page-header>
     <div id="kontakt" class="hero is-medium is-dark  space-below">
       <div class="hero-body">
         <div class="container">
@@ -81,3 +73,16 @@
   </div>
 </template>
 
+<script>
+  export default {
+    head () {
+      return {
+        title: 'Kontakt - Vindir: Web & IT og sånt',
+        meta: [
+          { hid: 'og:title', property: 'og:title', content: `Kontakt - Vindir: Web & IT og sånt` },
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/kontakt' }
+        ]
+      }
+    }
+  }
+</script>

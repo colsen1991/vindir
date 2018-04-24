@@ -16,10 +16,10 @@
   export default {
     head () {
       return {
-        title: 'Takk - Kontakt - Vindir: Web & IT og sånt',
+        title: 'Takk - Nyhetsbrev - Vindir: Web & IT og sånt',
         meta: [
-          { hid: 'og:title', property: 'og:title', content: `Takk - Kontakt - Vindir: Web & IT og sånt` },
-          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/takk/kontakt' }
+          { hid: 'og:title', property: 'og:title', content: `Takk - Nyhetsbrev - Vindir: Web & IT og sånt` },
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/nyhetsbrev/takk' }
         ]
       }
     }

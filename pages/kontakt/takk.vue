@@ -19,7 +19,7 @@
         title: 'Takk - Kontakt - Vindir: Web & IT og sånt',
         meta: [
           { hid: 'og:title', property: 'og:title', content: `Takk - Kontakt - Vindir: Web & IT og sånt` },
-          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/takk/kontakt' }
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/kontakt/takk' }
         ]
       }
     }

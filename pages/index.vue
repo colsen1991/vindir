@@ -58,11 +58,12 @@
         </div>
       </div>
     </section>
+
     <section id="kontakt" class="hero is-medium is-light  space-below">
       <div class="hero-body">
         <div class="container content has-text-centered">
-          <h2 class="is-size-2 is-size-3-mobile">Kontakt</h2>
-          <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
+          <h2 class="is-size-2 is-size-3-mobile">Bli kontaktet</h2>
+          <p>Legg igjen epost eller telefonnummer så tar jeg kontakt!</p>
           <form method="post" name="contact" action="/kontakt/takk" netlify-honeypot="bortgjemt" netlify>
             <div class="field has-addons has-addons-centered">
               <div class="control">
@@ -75,7 +76,7 @@
                        required>
               </div>
               <div class="control">
-                <button type="submit" class="button is-primary is-large">Send inn</button>
+                <button type="submit" class="button is-primary is-large">Send</button>
               </div>
             </div>
 
@@ -89,7 +90,8 @@
         </div>
       </div>
     </section>
-    <section class="hero space-below is-dark">
+
+    <section class="hero is-medium space-below is-dark">
       <div class="hero-body">
         <div class="container content has-text-centered">
           <h2 class="is-size-2 is-size-3-mobile">Vil du følge med på siste nytt?</h2>
@@ -105,7 +107,7 @@
                        required>
               </div>
               <div class="control">
-                <button type="submit" class="button is-primary is-large">Send inn</button>
+                <button type="submit" class="button is-primary is-large">Send</button>
               </div>
             </div>
 
@@ -113,7 +115,7 @@
             <input type="hidden" name="form-name" value="newsletter"/>
           </form>
           <p class="is-size-7">
-            Nyhetsbrevet inneholder bare relevante artikler og fagstoff og sendes ut maksimalt en gang i måneden.
+            Nyhetsbrevet inneholder bare relevante <b>artikler og fagstoff</b> og sendes ut maksimalt <b>en gang i måneden</b>.
           </p>
         </div>
       </div>
