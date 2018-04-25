@@ -23,10 +23,10 @@
             47 89 50 10
           </a>
         </div>
-        <div class="column">
+        <div class="column" itemscope itemtype="http://schema.org/Organization">
           <span class="icon"><i class="fab fa-facebook-f"></i></span>
           <br>
-          <a href="https://www.fb.me/vindirweb" rel="noopener nofollow" target="_blank">
+          <a itemprop="sameAs" href="https://www.facebook.com/vindirweb" rel="noopener nofollow" target="_blank">
             fb.me/vindirweb
           </a>
         </div>
