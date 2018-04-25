@@ -26,6 +26,7 @@
         <div class="column" itemscope itemtype="http://schema.org/Organization">
           <span class="icon"><i class="fab fa-facebook-f"></i></span>
           <br>
+          <link itemprop="url" href="http://www.vindir.no">
           <a itemprop="sameAs" href="https://www.facebook.com/vindirweb" rel="noopener nofollow" target="_blank">
             fb.me/vindirweb
           </a>
