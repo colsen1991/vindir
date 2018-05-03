@@ -1,6 +1,7 @@
-const bloggliste = require('./static/data/blogg.json').liste
+const isStatic = process.env.STATIC === 'true'
+const isStaging = process.env.STAGING === 'true'
 
-const isStatic = !!process.env.STATIC
+const bloggliste = require('./static/data/blogg.json').liste
 
 module.exports = {
   css: [
@@ -21,7 +22,7 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/google-analytics', { ua: 'UA-107229265-4' } ]
+    [ '@nuxtjs/google-analytics', { ua: isStaging ? '' : 'UA-107229265-4' } ]
   ],
   build: {
     postcss: {
@@ -71,7 +72,7 @@ module.exports = {
         content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'
       },
       { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
-      { name: 'robots', content: 'index, follow' }
+      { name: 'robots', content: isStaging ? 'noindex, nofollow' : 'index, follow' }
     ]
   },
   generate: {
