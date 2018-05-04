@@ -22,7 +22,7 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/google-analytics', { ua: isStaging ? '' : 'UA-107229265-4' } ]
+    [ '@nuxtjs/google-analytics', { ua: isStaging ? 'STAGING' : 'UA-107229265-4' } ]
   ],
   build: {
     postcss: {
