@@ -6,7 +6,7 @@
           <figure class="image is-48x48">
             <img alt="Vindirs logo; En vind som blåser mot høyre i 3 forskjellige farger - orange, blå og lilla"
                  title="Vindir"
-                 v-lazy="'https://www.datocms-assets.com/4973/1521131822-logo.png?auto=compress'">
+                 v-lazy="'https://www.datocms-assets.com/4973/1521131817-icon.png?auto=compress&crop=fit&w=200'">
           </figure>
           <span class="has-text-script is-italic is-size-3">VINDIR</span>
           &nbsp;
