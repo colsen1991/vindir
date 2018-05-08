@@ -28,21 +28,21 @@
                 <span>Del på:&nbsp;</span>
                 <span>
                   <a class="margin-right-1"
-                     :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vindir.no/blogg/${slug}`"
+                     :href="`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vindir.no%2Fblogg%2F${slug}`"
                      rel="nofollow noopener"
                      target="_blank"
                      title="Del på Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
                   <a class="margin-right-1"
-                     :href="`https://twitter.com/home?status=https%3A//www.vindir.no/blogg/${slug}`"
+                     :href="`https://twitter.com/home?status=https%3A%2F%2Fwww.vindir.no%2Fblogg%2F${slug}`"
                      rel="nofollow noopener"
                      target="_blank"
                      title="Del på Twitter">
                     <i class="fab fa-twitter"></i>
                   </a>
                   <a
-                    :href="`https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.vindir.no/blogg/${slug}&title=${title}&summary=${excerpt}`"
+                    :href="`https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.vindir.no%2Fblogg%2F${slug}&title=${title}&summary=${excerpt}`"
                     rel="nofollow noopener"
                     target="_blank"
                     title="Del på LinkedIn">
