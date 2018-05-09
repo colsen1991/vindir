@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>Nyhetsbrev</page-header>
-    <section id="kontakt" class="hero is-medium is-dark space-below">
+    <section class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <div class="container content has-text-centered">
           <h2 class="is-size-2 is-size-3-mobile">Vil du følge med på siste nytt?</h2>

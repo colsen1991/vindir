@@ -129,7 +129,7 @@
 
       &:hover,
       &:active {
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .5);
       }
     }
 

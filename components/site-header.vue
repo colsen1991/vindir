@@ -6,7 +6,7 @@
           <figure class="image is-48x48">
             <img alt="Vindirs logo; En vind som blåser mot høyre i 3 forskjellige farger - orange, blå og lilla"
                  title="Vindir"
-                 v-lazy="'https://www.datocms-assets.com/4973/1521131817-icon.png?auto=compress&crop=fit&w=200'">
+                 src="https://www.datocms-assets.com/4973/1521131817-icon.png?auto=compress&crop=fit&w=200">
           </figure>
           <span class="has-text-script is-italic is-size-3">VINDIR</span>
           &nbsp;
@@ -32,15 +32,19 @@
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
           <nuxt-link to="/blogg" class="navbar-item">
-            <i class="fas fa-book"></i>&nbsp;<span>BLOGG</span>
+            BLOGG
           </nuxt-link>
 
           <nuxt-link to="/kontakt" class="navbar-item">
-            <i class="far fa-id-card"></i>&nbsp;<span>KONTAKT</span>
+            KONTAKT
           </nuxt-link>
 
           <nuxt-link to="/nyhetsbrev" class="navbar-item">
-            <i class="far fa-newspaper"></i>&nbsp;<span>NYHETSBREV</span>
+            NYHETSBREV
+          </nuxt-link>
+
+          <nuxt-link to="/referanser" class="navbar-item">
+            REFERANSER
           </nuxt-link>
         </nav>
       </div>
