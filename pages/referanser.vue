@@ -29,6 +29,14 @@
                 logo="https://www.datocms-assets.com/4973/1525864614-1512555768-icon.png"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
+            <div class="column is-one-third">
+              <reference
+                name="Charlottes Hundepalass"
+                image="https://www.datocms-assets.com/4973/1526061006-2018-05-11-19_48_46-clipboard_edited.jpg"
+                link="https://www.charlotteshundepalass.no"
+                logo="https://www.datocms-assets.com/4973/1526061252-paw.png"
+                :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855079-wix-logo.svg', name: 'Wix'}"/>
+            </div>
           </div>
         </section>
       </div>
