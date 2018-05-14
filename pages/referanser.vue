@@ -1,9 +1,9 @@
 <template>
   <div>
     <page-header>Referanser</page-header>
-    <div class="hero">
+    <div class="hero space-below">
       <div class="hero-body">
-        <section class="container space-below">
+        <section class="container">
           <div class="columns is-multiline is-centered">
             <div class="column is-one-third">
               <reference

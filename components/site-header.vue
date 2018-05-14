@@ -35,6 +35,10 @@
             BLOGG
           </nuxt-link>
 
+          <nuxt-link to="/om-meg" class="navbar-item">
+            OM MEG
+          </nuxt-link>
+
           <nuxt-link to="/kontakt" class="navbar-item">
             KONTAKT
           </nuxt-link>

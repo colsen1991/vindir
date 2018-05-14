@@ -41,7 +41,7 @@
 
             <section class="column content has-text-centered">
               <h2 class="is-size-2 is-size-3-mobile">Bli kontaktet</h2>
-              <p>Ikke nøl med å ta kontakt for en uforpliktende prat eller et tilbud!</p>
+              <p>Legg igjen epost eller telefonnummer så tar jeg kontakt!</p>
               <form method="post" name="contact" action="/kontakt/takk" netlify-honeypot="bortgjemt" netlify>
                 <div class="field has-addons has-addons-centered">
                   <div class="control">
@@ -62,8 +62,7 @@
                 <input type="hidden" name="form-name" value="contact"/>
               </form>
               <p class="is-size-7">
-                Dette melder deg <b>ikke</b> inn noe nyhetsbrev e.l.
-                Mer kontaktinformasjon nederst på siden.
+                Dette melder deg <b>ikke</b> inn noe nyhetsbrev e.l. og er helt uforpliktende!
               </p>
             </section>
           </div>

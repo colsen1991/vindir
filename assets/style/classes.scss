@@ -82,3 +82,12 @@
   padding-top: 0 !important;
 }
 
+.image.is-max-512x512 {
+  max-width: 512px;
+  max-height: 512px;
+}
+
+.image.is-round img,
+img.is-round {
+  border-radius: 50%;
+}
