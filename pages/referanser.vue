@@ -25,7 +25,7 @@
               <reference
                 name="Seil Muligheten"
                 image="https://www.datocms-assets.com/4973/1525866810-seilmuligheten_edited.jpg"
-                link="https://www.facebook.com/Seilmuligheten/"
+                link="https://www.seilmuligheten.no/"
                 logo="https://www.datocms-assets.com/4973/1525864614-1512555768-icon.png"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
