@@ -10,7 +10,7 @@
                 name="Saver1"
                 link="https://www.saver1.no"
                 image="https://www.datocms-assets.com/4973/1525866584-saver1_edited.jpg"
-                logo="https://www.datocms-assets.com/4973/1525864513-1517312572-logo-square.png"
+                logo="https://www.datocms-assets.com/4973/1525864513-1517312572-logo-square.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
             <div class="column is-one-third">
@@ -18,7 +18,7 @@
                 name="SKOgfrua"
                 image="https://www.datocms-assets.com/4973/1525866251-skogfrua_edited.jpg"
                 link="https://www.skogfrua.no"
-                logo="https://www.datocms-assets.com/4973/1525864555-icon.png"
+                logo="https://www.datocms-assets.com/4973/1525864555-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
             <div class="column is-one-third">
@@ -26,7 +26,7 @@
                 name="Seil Muligheten"
                 image="https://www.datocms-assets.com/4973/1525866810-seilmuligheten_edited.jpg"
                 link="https://www.seilmuligheten.no/"
-                logo="https://www.datocms-assets.com/4973/1525864614-1512555768-icon.png"
+                logo="https://www.datocms-assets.com/4973/1525864614-1512555768-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
             <div class="column is-one-third">
@@ -34,7 +34,15 @@
                 name="Charlottes Hundepalass"
                 image="https://www.datocms-assets.com/4973/1526061006-2018-05-11-19_48_46-clipboard_edited.jpg"
                 link="https://www.charlotteshundepalass.no"
-                logo="https://www.datocms-assets.com/4973/1526061252-paw.png"
+                logo="https://www.datocms-assets.com/4973/1526061252-paw.png?w=200"
+                :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855079-wix-logo.svg', name: 'Wix'}"/>
+            </div>
+            <div class="column is-one-third">
+              <reference
+                name="Bodø Coach"
+                image="https://www.datocms-assets.com/4973/1530015461-bodocoach.jpg"
+                link="https://www.bodocoach.no"
+                logo="https://www.datocms-assets.com/4973/1530015790-logo.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855079-wix-logo.svg', name: 'Wix'}"/>
             </div>
           </div>
