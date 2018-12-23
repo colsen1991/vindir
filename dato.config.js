@@ -1,9 +1,9 @@
 module.exports = (dato, root) => {
   root.directory('static/data', (dataDir) => {
-
     let bloggliste = []
 
     dato.blogPosts.forEach(blogPost => {
+      console.log(bloggliste)
       const blogPostObject = blogPost.toMap()
 
       delete blogPostObject.seoMetaTags
