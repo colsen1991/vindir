@@ -3,7 +3,6 @@ module.exports = (dato, root) => {
     let bloggliste = []
 
     dato.blogPosts.forEach(blogPost => {
-      console.log(bloggliste)
       const blogPostObject = blogPost.toMap()
 
       delete blogPostObject.seoMetaTags
