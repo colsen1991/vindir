@@ -1,7 +1,7 @@
 <template>
   <div>
     <article class="space-below">
-      <header class="hero is-image is-sooted space-below" v-lazy:background-image="$createSrc(image.url, 1920)">
+      <header class="hero is-image is-sooted space-below" v-lazy:background-image="$createSrc(image.url, 1920, 'max', 0.56)">
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="is-size-1 is-size-2-mobile">
@@ -57,42 +57,13 @@
       </footer>
     </article>
 
-    <section class="hero is-light space-below">
+    <section class="hero is-light is-medium space-below">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns content has-text-centered is-centered">
-            <div class="column">
-              <h2 class="is-size-2 is-size-3-mobile">Vil du lære flere tips og triks?</h2>
-              <p>
-                <nuxt-link to="/blogg" class="button is-large is-info">Les flere innlegg</nuxt-link>
-              </p>
-            </div>
-
-            <div class="column">
-              <h2 class="is-size-2 is-size-3-mobile">Eller meld deg på nyhetsbrevet!</h2>
-              <form method="post" name="newsletter" action="/nyhetsbrev/takk" netlify-honeypot="bortgjemt" netlify>
-                <div class="field has-addons has-addons-centered">
-                  <div class="control">
-                    <input title="Epost"
-                           name="Epost"
-                           class="input is-large"
-                           type="email"
-                           placeholder="Epost"
-                           required>
-                  </div>
-                  <div class="control">
-                    <button type="submit" class="button is-primary is-large">Send inn</button>
-                  </div>
-                </div>
-
-                <input class="is-hidden" name="bortgjemt">
-                <input type="hidden" name="form-name" value="newsletter"/>
-              </form>
-              <p class="is-size-7">
-                Nyhetsbrevet inneholder bare relevante artikler og fagstoff og sendes ut maksimalt en gang i måneden.
-              </p>
-            </div>
-          </div>
+        <div class="container content has-text-centered">
+          <h2 class="is-size-2 is-size-3-mobile">Vil du lære flere tips og triks?</h2>
+          <p>
+            <nuxt-link to="/blogg" class="button is-large is-info">Les flere innlegg</nuxt-link>
+          </p>
         </div>
       </div>
     </section>

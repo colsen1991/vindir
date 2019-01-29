@@ -66,8 +66,8 @@
       return {
         title: 'Referanser - Vindir: Web & IT og sånt',
         meta: [
-          { hid: 'og:title', property: 'og:title', content: `Referanser - Vindir: Web & IT og sånt` },
-          { hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/referanser' }
+          {hid: 'og:title', property: 'og:title', content: `Referanser - Vindir: Web & IT og sånt`},
+          {hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/referanser'}
         ]
       }
     }

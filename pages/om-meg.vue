@@ -23,11 +23,16 @@
                 uforpliktende prat - vi finner nok raskt ut om jeg er rett person for å levere nettop din hjemmeside! Kontaktinformasjon finner du
                 nederst på siden, eventuelt <span><nuxt-link to="/kontakt">her</nuxt-link>.</span>
               </p>
+
+              <p>
+                Avslutningsvisvis om du ønsker å lese mer om mine tekniske ferdigheter kan du ta en titt på min komprimerte online-CV
+                <a href="https://www.christerolsen.me/" target="_blank" rel="noopener nofollow">her</a>.
+              </p>
             </div>
             <div class="column is-flex justify-centered align-center">
               <figure class="image is-round is-max-512x512">
-                <img v-lazy="$createSrc('https://www.datocms-assets.com/4973/1526298079-me.jpg', 512)"
-                     :data-srcset="$createSrcSet($createSrc('https://www.datocms-assets.com/4973/1526298079-me.jpg', 512), 200, 1024)"
+                <img v-lazy="$createSrc('https://www.datocms-assets.com/4973/1526298079-me.jpg', 1024, 'crop', 1)"
+                     :data-srcset="$createSrcSet('https://www.datocms-assets.com/4973/1526298079-me.jpg', 'crop', 1)"
                      :sizes="$createSizes()"
                      alt="Christer Olsen - Innehaver av Vindir"
                      title="Christer Olsen">

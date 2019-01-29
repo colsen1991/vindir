@@ -7,9 +7,6 @@
   "scripts": {
     "predev": "npm run dato",
     "dev": "nuxt",
-    "prebuild": "npm run dato",
-    "build": "nuxt build",
-    "start": "nuxt start",
     "prestaging": "ncp ./static/robots/robots-staging.txt ./static/robots.txt",
     "staging": "cross-env STAGING=true npm run generate",
     "preproduction": "ncp ./static/robots/robots-prod.txt ./static/robots.txt",
@@ -26,21 +23,12 @@
     "nuxt": "2.3.4",
     "vue-disqus": "3.0.5",
     "vue-lazyload": "1.2.6",
-    "vue-responsive-img-helpers": "1.0.9",
+    "vue-responsive-img-helpers": "1.2.0",
     "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "10.0.1",
     "cross-env": "5.2.0",
     "datocms-client": "0.8.11",
-    "eslint": "5.11.0",
-    "eslint-config-standard": "12.0.0",
-    "eslint-loader": "2.1.1",
-    "eslint-plugin-html": "5.0.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-node": "8.0.0",
-    "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-standard": "4.0.0",
     "ncp": "2.0.0",
     "node-sass": "4.11.0",
     "sass-loader": "7.1.0"

@@ -45,3 +45,9 @@
     name: 'site-footer'
   }
 </script>
+
+<style lang="scss" scoped>
+  .footer {
+    background-color: white;
+  }
+</style>

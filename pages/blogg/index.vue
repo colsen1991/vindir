@@ -4,7 +4,7 @@
     <div class="container">
       <article class="blog-post space-below" v-for="(blogginnlegg, i) in liste" :key="blogginnlegg.id">
         <nuxt-link :to="`/blogg/${blogginnlegg.slug}`">
-          <header class="hero is-medium is-image is-sooted" v-lazy:background-image="$createSrc(blogginnlegg.image.url, 1920)">
+          <header class="hero is-medium is-image is-sooted" v-lazy:background-image="$createSrc(blogginnlegg.image.url, 1920, 'max', 0.56)">
             <div class="hero-body has-text-light has-text-centered">
               <h2 class="is-size-2 is-size-3-mobile">{{blogginnlegg.title}}</h2>
             </div>
@@ -50,35 +50,6 @@
         </footer>
       </article>
     </div>
-    <section class="hero space-below" :class="`is-${liste.length%2 === 0 ? 'dark' : 'light'}`">
-      <div class="hero-body">
-        <div class="container content has-text-centered">
-          <h2 class="is-size-2 is-size-3-mobile">Vil du følge med på siste nytt?</h2>
-          <p>Meld deg på nyhetsbrevet!</p>
-          <form method="post" name="newsletter" action="/nyhetsbrev/takk" netlify-honeypot="bortgjemt" netlify>
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input title="Epost"
-                       name="Epost"
-                       class="input is-large"
-                       type="email"
-                       placeholder="Epost"
-                       required>
-              </div>
-              <div class="control">
-                <button type="submit" class="button is-primary is-large">Send inn</button>
-              </div>
-            </div>
-
-            <input class="is-hidden" name="bortgjemt">
-            <input type="hidden" name="form-name" value="newsletter"/>
-          </form>
-          <p class="is-size-7">
-            Nyhetsbrevet inneholder bare relevante artikler og fagstoff og sendes ut maksimalt en gang i måneden.
-          </p>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 

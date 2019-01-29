@@ -43,10 +43,6 @@
             KONTAKT
           </nuxt-link>
 
-          <nuxt-link to="/nyhetsbrev" class="navbar-item">
-            NYHETSBREV
-          </nuxt-link>
-
           <nuxt-link to="/referanser" class="navbar-item">
             REFERANSER
           </nuxt-link>

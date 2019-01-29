@@ -10,12 +10,23 @@ $purple: #94268E;
 $primary: $orange;
 $primary-invert: findColorInvert($primary);
 
-$link: $purple;
+$link: $blue;
 $link-invert: findColorInvert($link);
 
-$info: $blue;
-$info-invert: findColorInvert($blue);
+$info: $purple;
+$info-invert: findColorInvert($info);
 
 $family-sans-serif: 'Montserrat', sans-serif;
+
+.hero.is-dark,
+.hero.is-light {
+  a:not(.button) {
+    color: $link !important;
+
+    &:hover {
+      color: #EBEBEB !important;
+    }
+  }
+}
 
 @import "../../node_modules/bulma/bulma.sass";

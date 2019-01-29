@@ -1,10 +1,10 @@
 <template>
-  <section class="card grow-hover">
+  <section class="card">
     <a :href="link" target="_blank" rel="noopener nofollow">
       <div class="card-image">
         <figure class="image is-4by3">
-          <img v-lazy="$createSrc(image, 600)"
-               :data-srcset="$createSrcSet($createSrc(image, 600), 200)"
+          <img v-lazy="$createSrc(image, 1000, 'crop', 0,75)"
+               :data-srcset="$createSrcSet(image, 'crop', 0.75)"
                :sizes="$createSizes('33vw')"
                :alt="`${name} sin framside`"
                :title="`${name} sin framside`">
@@ -14,9 +14,7 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-48x48">
-              <img v-lazy="$createSrc(logo, 200)"
-                   :data-srcset="$createSrcSet($createSrc(logo, 200), 50, 200, 50)"
-                   :sizes="$createSizes('48px', true)"
+              <img v-lazy="$createSrc(logo, 200, 'max', 1)"
                    :alt="`${name} sin logo`"
                    :title="`${name} sin logo`">
             </figure>
@@ -66,8 +64,8 @@
 </script>
 
 <style lang="scss" scoped>
-  .card,
-  .grow-hover {
+  .card {
+    background-color: #EBEBEB;
     height: 100%;
     transition: box-shadow .1s ease-in-out, background-color .25s ease-in-out;
 
@@ -80,15 +78,34 @@
       }
     }
 
-    .card-image {
-      border-bottom: 3px solid white;
-      transition: border-bottom-color .25s ease-in-out;
-    }
+    a {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
 
-    .made-with {
-      height: .75rem;
-      margin-top: .25rem;
-      display: block;
+      .card-image {
+        border-bottom: 3px solid white;
+        transition: border-bottom-color .25s ease-in-out;
+      }
+
+      .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .made-with {
+          height: .75rem;
+          margin-top: .25rem;
+          display: block;
+        }
+
+        .media-content {
+          h2 {
+            color: #222725 !important;
+          }
+        }
+      }
     }
   }
 </style>

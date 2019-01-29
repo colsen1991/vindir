@@ -2,7 +2,7 @@
   <div>
     <section id="banner"
              class="hero is-image is-fullheight space-below"
-             v-lazy:background-image="'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'">
+             v-lazy:background-image="$createSrc('https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg', 1920, 'max', 0.56)">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
@@ -22,6 +22,7 @@
         </div>
       </div>
     </section>
+
     <section id="tjenester" class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <div class="container has-text-centered content">
@@ -90,37 +91,6 @@
         </div>
       </div>
     </section>
-
-    <section class="hero is-medium space-below is-dark">
-      <div class="hero-body">
-        <div class="container content has-text-centered">
-          <h2 class="is-size-2 is-size-3-mobile">Vil du følge med på siste nytt?</h2>
-          <p>Meld deg på nyhetsbrevet!</p>
-          <form method="post" name="newsletter" action="/nyhetsbrev/takk" netlify-honeypot="bortgjemt" netlify>
-            <div class="field has-addons has-addons-centered">
-              <div class="control">
-                <input title="Epost"
-                       name="Epost"
-                       class="input is-large"
-                       type="email"
-                       placeholder="Epost"
-                       required>
-              </div>
-              <div class="control">
-                <button type="submit" class="button is-primary is-large">Send</button>
-              </div>
-            </div>
-
-            <input class="is-hidden" name="bortgjemt">
-            <input type="hidden" name="form-name" value="newsletter"/>
-          </form>
-          <p class="is-size-7">
-            Nyhetsbrevet inneholder bare relevante <b>artikler og fagstoff</b> og sendes ut maksimalt <b>en gang i måneden</b>.
-          </p>
-        </div>
-      </div>
-    </section>
-
   </div>
 </template>
 

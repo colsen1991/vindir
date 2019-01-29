@@ -38,7 +38,8 @@ module.exports = {
   plugins: [
     './plugins/components',
     './plugins/lazyload',
-    './plugins/responsive'
+    './plugins/responsive',
+    './plugins/disqus'
   ],
   head: {
     htmlAttrs: { lang: 'nb-NO' },
@@ -91,8 +92,7 @@ module.exports = {
     routes: bloggliste.map(({ slug }) => `/blogg/${slug}`),
     exclude: [
       '/404',
-      '/kontakt/takk',
-      '/nyhetsbrev/takk'
+      '/kontakt/takk'
     ]
   },
   workbox: {
