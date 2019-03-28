@@ -11,8 +11,8 @@
                 <p>
                   <span class="icon is-hidden-tablet"><i class="fas fa-map-marker"></i></span>
                   <br class="is-hidden-tablet">
-                  <a href="https://goo.gl/maps/RYExmBRPKxA2" target="_blank" rel="noopener nofollow">
-                    Sjøgata 15/17, 8006 Bodø
+                  <a href="https://goo.gl/maps/zGGCCKTWQc92" target="_blank" rel="noopener nofollow">
+                    Sentrumsvegen 17, 3539 Flå
                   </a>
                 </p>
                 <p>

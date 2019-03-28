@@ -14,7 +14,7 @@ module.exports = {
     name: 'Vindir: Web & IT og sånt',
     short_name: 'Vindir',
     display: 'standalone',
-    description: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.',
+    description: 'Vindir er et lite web- og IT-byrå i Flå som leverer skreddersydde hjemmesider og webløsninger.',
     orientation: 'any',
     theme_color: '#FF6A00',
     background_color: '#fff'
@@ -52,14 +52,14 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Vindir er et lite web- og IT-byrå i Bodø som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
+        content: 'Vindir er et lite web- og IT-byrå i Flå som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
       },
       { name: 'theme-color', content: '#FF6A00' },
       { hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Vindir er et lite web- og IT-byrå i Bodø som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
+        content: 'Vindir er et lite web- og IT-byrå i Flå som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
