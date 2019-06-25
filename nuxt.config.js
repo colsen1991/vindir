@@ -30,10 +30,7 @@ module.exports = {
         'postcss-custom-properties': false
       }
     },
-    extractCSS: true,
-    vendor: [
-      'whatwg-fetch'
-    ]
+    extractCSS: true
   },
   plugins: [
     './plugins/components',
