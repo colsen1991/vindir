@@ -7,6 +7,15 @@
           <div class="columns is-multiline is-centered">
             <div class="column is-one-third">
               <reference
+                name="Lærepenger"
+                image="https://www.datocms-assets.com/4973/1561454591-2019-06-25-111929-window.png"
+                link="https://www.larepenger.no"
+                logo="https://www.datocms-assets.com/4973/1561454588-dnb.png?w=200"
+                :madeWith="{logo: 'https://www.datocms-assets.com/4973/1561454923-nuxtjs-typo.svg', name: 'JAMstack'}"
+                delivered="Frontend"/>
+            </div>
+            <div class="column is-one-third">
+              <reference
                 name="Saver1"
                 link="https://www.saver1.no"
                 image="https://www.datocms-assets.com/4973/1525866584-saver1_edited.jpg"
@@ -52,6 +61,15 @@
                 link="https://www.arctichost.cloud"
                 logo="https://www.datocms-assets.com/4973/1545570906-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
+            </div>
+            <div class="column is-one-third">
+              <reference
+                name="CompanyCast"
+                image="https://www.datocms-assets.com/4973/1561454811-untitled.png"
+                link="https://www.companycast.no"
+                logo="https://www.datocms-assets.com/4973/1561454590-1550145617-icon.png?w=200"
+                :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"
+              delivered="Utvikling"/>
             </div>
           </div>
         </section>
