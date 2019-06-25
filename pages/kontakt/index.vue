@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>Kontakt</page-header>
-    <div id="kontakt" class="hero is-medium is-dark  space-below">
+    <div id="kontakt" class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <div class="container">
           <div class="columns is-centered">

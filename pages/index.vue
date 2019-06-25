@@ -7,9 +7,9 @@
         <div class="container">
           <div class="columns">
             <div class="column is-image-text content is-medium has-text-centered-mobile">
-              <h1 class="is-size-1 is-size-2-mobile">Hjemmesider & webløsninger</h1>
+              <h1 class="is-size-1 is-size-2-mobile">Hjemmesider, webløsninger & programvare</h1>
               <p class="is-size-3 is-size-4-mobile">
-                Skreddersydd til dine behov, både teknisk og visuelt, og levert av en smidig og moderne prosess!
+                Skreddersydd til ditt behov, både teknisk og visuelt, og levert av en smidig og moderne prosess!
               </p>
             </div>
             <div class="column is-flex justify-centered align-center">
@@ -34,7 +34,7 @@
               </div>
               <h3>Totalleverandør</h3>
               <div>
-                <p>Jeg leverer hjemmesider og nettløsninger fra A til Å; fra planlegging, domenekjøp, design, utvikling, installasjon og drift!</p>
+                <p>Jeg leverer det meste som kan programmeres fra A til Å; fra planlegging, design, utvikling, installasjon og drift!</p>
               </div>
             </div>
             <div class="column">
@@ -43,7 +43,7 @@
               </div>
               <h3>Konsulent</h3>
               <div>
-                <p>Jeg har flere års erfaring og er utdannet dataingeniør og IKT-servicemedarbeider, og byr gjerne på min kunnskap.</p>
+                <p>Jeg har flere års erfaring innenfagfeltet og en grundig utdannelse i bakgrunn, og byr gjerne på min kunnskap!</p>
               </div>
             </div>
             <div class="column">
@@ -52,7 +52,7 @@
               </div>
               <h3>Kurs</h3>
               <div>
-                <p>Trenger du eller din bedrift et kompetanseløft? Jeg kommer gjerne innom og holder et kurs for dere!</p>
+                <p>Trenger du eller din bedrift et kompetanseløft? Jeg kommer gjerne innom og hjelper dere med det!</p>
               </div>
             </div>
           </div>
@@ -85,8 +85,8 @@
             <input type="hidden" name="form-name" value="contact"/>
           </form>
           <p class="is-size-7">
-            Dette melder deg <b>ikke</b> inn noe nyhetsbrev e.l.
-            Mer kontaktinformasjon nederst på siden.
+            Dette melder deg <b>ikke</b> på noe nyhetsbrev e.l.
+            Mer kontaktinformasjon nederst på siden eller <nuxt-link to="/kontakt">her</nuxt-link>.
           </p>
         </div>
       </div>

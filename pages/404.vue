@@ -1,17 +1,16 @@
 <template>
-  <section class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="container content has-text-centered">
-        <h1 class="is-size-1 is-size-2-mobile">
-          <page-header-text>404 - Siden finnes ikke</page-header-text>
-        </h1>
-        <p class="is-size-2 is-size-3-mobile">¯\_(ツ)_/¯</p>
-        <p>Usikker på hvordan du havnet her...</p>
-        <p>Beklager det!</p>
-        <nuxt-link to="/" class="button is-link is-large">Tilbake til forsiden</nuxt-link>
+  <div>
+    <page-header>404 - Siden finnes ikke</page-header>
+    <section class="hero is-medium is-dark space-below">
+      <div class="hero-body">
+        <div class="container content has-text-centered">
+          <p>Usikker på hvordan du havnet her...</p>
+          <p>Beklager det!</p>
+          <nuxt-link to="/" class="button is-link is-large">Tilbake til forsiden</nuxt-link>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>

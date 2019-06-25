@@ -1,15 +1,17 @@
 <template>
-  <section class="hero is-large">
-    <div class="hero-body">
-      <div class="container content has-text-centered">
-        <div class="is-image-text margin-bottom-1">
-          <h1>Takk ツ</h1>
-          <p>Tusen takk for at du tok kontakt! Jeg svarer deg så snart jeg kan!</p>
+  <div>
+    <page-header>Takk</page-header>
+    <section class="hero is-medium is-dark space-below">
+      <div class="hero-body">
+        <div class="container content has-text-centered">
+          <div class="is-image-text margin-bottom-1">
+            <p>Tusen takk for at du tok kontakt! Jeg svarer deg så snart jeg kan!</p>
+          </div>
+          <nuxt-link to="/" class="button is-large is-link">Tilbake til forsiden</nuxt-link>
         </div>
-        <nuxt-link to="/" class="button is-large is-primary">Tilbake til forsiden</nuxt-link>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
