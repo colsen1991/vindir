@@ -1,9 +1,8 @@
-const isStatic = process.env.STATIC === 'true'
-const isStaging = process.env.STAGING === 'true'
-
-const bloggliste = require('./static/data/blogg.json').liste
+const isProduction = process.env.NODE_ENV === 'production'
+const blogPosts = require('./static/data/blog.json')
 
 module.exports = {
+  target: 'static',
   css: [
     { src: './assets/style/index.scss', lang: 'sass' }
   ],
@@ -19,24 +18,18 @@ module.exports = {
     theme_color: '#FF6A00',
     background_color: '#fff'
   },
-  modules: [
+  modules: isProduction ?[
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/google-analytics', { ua: isStaging ? 'STAGING' : 'UA-107229265-4' } ]
-  ],
+    [ '@nuxtjs/google-analytics', { ua: 'UA-107229265-4' } ]
+  ] : undefined,
   build: {
-    postcss: {
-      plugins: {
-        'postcss-custom-properties': false
-      }
-    },
     extractCSS: true
   },
   plugins: [
     './plugins/components',
     './plugins/lazyload',
-    './plugins/responsive',
-    './plugins/disqus'
+    './plugins/responsive'
   ],
   head: {
     htmlAttrs: { lang: 'nb-NO' },
@@ -70,11 +63,11 @@ module.exports = {
         content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'
       },
       { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
-      { name: 'robots', content: isStaging ? 'noindex, nofollow' : 'index, follow' }
+      { name: 'robots', content: 'index, follow' }
     ]
   },
   generate: {
-    routes: bloggliste.map(({ slug }) => {
+    routes: blogPosts.map(({ slug }) => {
       return {
         route: `/blogg/${slug}`,
         payload: require(`./static/data/blogg/${slug}.json`)
@@ -85,14 +78,10 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: 'https://www.vindir.no',
     cacheTime: 1000 * 60 * 15,
-    generate: isStatic,
-    routes: bloggliste.map(({ slug }) => `/blogg/${slug}`),
+    routes: blogPosts.map(({ slug }) => `/blogg/${slug}`),
     exclude: [
       '/404',
       '/kontakt/takk'
     ]
-  },
-  workbox: {
-    handleFetch: isStatic
   }
 }

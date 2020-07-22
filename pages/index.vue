@@ -2,7 +2,7 @@
   <div>
     <section id="banner"
              class="hero is-image is-fullheight space-below"
-             v-lazy:background-image="$createSrc('https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg', 1920, 'max', 0.56)">
+             v-lazy:background-image="$createSrc('https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg', {width: 1920, fit:'max'})">
       <div class="hero-body">
         <div class="container">
           <div class="columns">

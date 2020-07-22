@@ -1,7 +1,7 @@
 <template>
   <div>
     <article class="space-below">
-      <header class="hero is-image is-sooted space-below" v-lazy:background-image="$createSrc(image.url, 1920, 'max', 0.56)">
+      <header class="hero is-image is-sooted space-below" v-lazy:background-image="$createSrc(image.url, {width: 1920, fit: 'max'})">
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="is-size-1 is-size-2-mobile">
@@ -51,7 +51,6 @@
                 </span>
               </span>
             </div>
-            <vue-disqus shortname="vindir" :identifier="slug" :url="`https://www.vindir.no/blogg/${slug}`" />
           </div>
         </div>
       </footer>
@@ -71,18 +70,25 @@
 </template>
 
 <script>
-  import getData from '../../utils/data'
-
   export default {
-    async asyncData ({ payload, params: { slug }, error }) {
-      return getData(payload, `blogg/${slug}.json`, error)
+    async asyncData ({payload, params: {slug}, error}) {
+      if (payload) {
+        return payload
+      }
+
+      try {
+        const response = await fetch(`/data/blogg/${slug}.json`)
+        return await response.json()
+      } catch (e) {
+        error({statusCode: 500, message: e.message})
+      }
     },
     head () {
       return {
         title: `${this.title} - Blogg - Vindir: Web & IT og sånt`,
-        link: [ { hid: 'canonical', rel: 'canonical', href: `https://www.vindir.no/blogg/${this.slug}` } ],
+        link: [{hid: 'canonical', rel: 'canonical', href: `https://www.vindir.no/blogg/${this.slug}`}],
         meta: [
-          { hid: 'og:title', property: 'og:title', content: `${this.title} - Blogg - Vindir: Web & IT og sånt` },
+          {hid: 'og:title', property: 'og:title', content: `${this.title} - Blogg - Vindir: Web & IT og sånt`},
           {
             hid: 'og:image',
             property: 'og:image',

@@ -35,7 +35,7 @@
 
       <hr>
 
-      <p class="has-text-centered is-size-6">&copy; {{new Date().getFullYear()}} Vindir</p>
+      <p class="has-text-centered is-size-6">&copy; 2017 Vindir</p>
     </div>
   </footer>
 </template>

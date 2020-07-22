@@ -3,9 +3,9 @@
     <a :href="link" target="_blank" rel="noopener nofollow">
       <div class="card-image">
         <figure class="image is-4by3">
-          <img v-lazy="$createSrc(image, 1000, 'crop', 0,75)"
-               :data-srcset="$createSrcSet(image, 'crop', 0.75)"
-               :sizes="$createSizes('33vw')"
+          <img v-lazy="$createSrc(image, {width: 1000, heightRatio: 0.75})"
+               :data-srcset="$createSrcSet(image, {heightRatio: 0.75})"
+               :sizes="$createSizes()"
                :alt="`${name} sin framside`"
                :title="`${name} sin framside`">
         </figure>
@@ -14,7 +14,7 @@
         <div class="media">
           <div class="media-left">
             <figure class="image is-48x48">
-              <img v-lazy="$createSrc(logo, 200, 'max', 1)"
+              <img v-lazy="$createSrc(logo, {width: 200, fit: 'max', heightRatio: 1})"
                    :alt="`${name} sin logo`"
                    :title="`${name} sin logo`">
             </figure>

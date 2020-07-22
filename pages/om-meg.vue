@@ -31,8 +31,8 @@
             </div>
             <div class="column is-flex justify-centered align-center">
               <figure class="image is-round is-max-512x512">
-                <img v-lazy="$createSrc('https://www.datocms-assets.com/4973/1526298079-me.jpg', 1024, 'crop', 1)"
-                     :data-srcset="$createSrcSet('https://www.datocms-assets.com/4973/1526298079-me.jpg', 'crop', 1)"
+                <img v-lazy="$createSrc('https://www.datocms-assets.com/4973/1526298079-me.jpg', {width: 1024, heightRatio: 1})"
+                     :data-srcset="$createSrcSet('https://www.datocms-assets.com/4973/1526298079-me.jpg', {heightRatio: 1})"
                      :sizes="$createSizes()"
                      alt="Christer Olsen - Innehaver av Vindir"
                      title="Christer Olsen">
