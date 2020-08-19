@@ -26,7 +26,6 @@
               <reference
                 name="SKOgfrua"
                 image="https://www.datocms-assets.com/4973/1525866251-skogfrua_edited.jpg"
-                link="https://www.skogfrua.no"
                 logo="https://www.datocms-assets.com/4973/1525864555-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
@@ -42,7 +41,6 @@
               <reference
                 name="Charlottes Hundepalass"
                 image="https://www.datocms-assets.com/4973/1526061006-2018-05-11-19_48_46-clipboard_edited.jpg"
-                link="https://www.charlotteshundepalass.no"
                 logo="https://www.datocms-assets.com/4973/1526061252-paw.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855079-wix-logo.svg', name: 'Wix'}"/>
             </div>
@@ -50,7 +48,6 @@
               <reference
                 name="Bodø Coach"
                 image="https://www.datocms-assets.com/4973/1545571680-bodoedited.jpg"
-                link="https://www.bodocoach.no"
                 logo="https://www.datocms-assets.com/4973/1530015790-logo.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855079-wix-logo.svg', name: 'Wix'}"/>
             </div>
@@ -58,7 +55,6 @@
               <reference
                 name="Arctic Host"
                 image="https://www.datocms-assets.com/4973/1545571676-arctic.png"
-                link="https://www.arctichost.cloud"
                 logo="https://www.datocms-assets.com/4973/1545570906-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"/>
             </div>
@@ -66,7 +62,7 @@
               <reference
                 name="CompanyCast"
                 image="https://www.datocms-assets.com/4973/1561454811-untitled.png"
-                link="https://www.companycast.no"
+                link="https://2019.companycast.no"
                 logo="https://www.datocms-assets.com/4973/1561454590-1550145617-icon.png?w=200"
                 :madeWith="{logo: 'https://www.datocms-assets.com/4973/1525855072-jamstack-full-logo.svg', name: 'JAMstack'}"
               delivered="Utvikling"/>

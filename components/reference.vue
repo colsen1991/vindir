@@ -1,6 +1,6 @@
 <template>
   <section class="card">
-    <a :href="link" target="_blank" rel="noopener nofollow">
+    <component :is="link ? 'a' : 'div'" :href="link" target="_blank" rel="noopener nofollow" class="reference-wrapper">
       <div class="card-image">
         <figure class="image is-4by3">
           <img v-lazy="$createSrc(image, {width: 1000, heightRatio: 0.75})"
@@ -28,7 +28,7 @@
           <p class="has-gradient-link-background has-text-light has-text-centered">{{delivered}}</p>
         </div>
       </div>
-    </a>
+    </component>
   </section>
 </template>
 
@@ -43,7 +43,7 @@
         default: ''
       },
       link: {
-        default: ''
+        default: null
       },
       logo: {
         default: ''
@@ -74,11 +74,11 @@
       background-color: #F5F5F5 !important;
 
       .card-image {
-        border-bottom: 3px solid #FF7B00;
+        border-bottom: 3px solid #FF7B00 !important;
       }
     }
 
-    a {
+    .reference-wrapper {
       height: 100%;
       display: flex;
       flex-direction: column;

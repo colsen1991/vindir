@@ -20,8 +20,8 @@
 
               <p>
                 Jeg holder til i Flå, men leverer løsninger og tjenester over hele landet (og utlandet). Så ikke nøl med å ta kontakt for en
-                uforpliktende prat - vi finner nok raskt ut om jeg er rett person for å levere nettop din hjemmeside! Kontaktinformasjon finner du
-                nederst på siden, eventuelt <span><nuxt-link to="/kontakt">her</nuxt-link>.</span>
+                uforpliktende prat - vi finner nok raskt ut om jeg er rett person for å levere nettop din hjemmeside/webløsning!
+                Kontaktinformasjon finner du nederst på siden, eventuelt <span><nuxt-link to="/kontakt">her</nuxt-link>.</span>
               </p>
 
               <p>
