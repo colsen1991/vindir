@@ -71,16 +71,16 @@
 
 <script>
   export default {
-    async asyncData ({payload, params: {slug}, error}) {
-      if (payload) {
-        return payload
-      }
-
-      try {
-        const response = await fetch(`/data/blogg/${slug}.json`)
-        return await response.json()
-      } catch (e) {
-        error({statusCode: 500, message: e.message})
+    async asyncData ({params: {slug}, error}) {
+      if (process.server) {
+        return require(`../../static/data/blogg/${slug}.json`)
+      } else {
+        try {
+          const response = await fetch(`/data/blogg/${slug}.json`)
+          return await response.json()
+        } catch (e) {
+          error({statusCode: 500, message: e.message})
+        }
       }
     },
     head () {

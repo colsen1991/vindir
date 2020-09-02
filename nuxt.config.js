@@ -1,12 +1,9 @@
 const isProduction = process.env.NODE_ENV === 'production'
-const blogPosts = require('./static/data/blog.json')
 
 /**
- *
- * @type {NuxtConfig}
+ * @type NuxtOptions
  */
-const nuxtConfig = {
-  mode: 'spa',
+export default {
   target: 'static',
   css: [
     {src: './assets/style/index.scss', lang: 'sass'}
@@ -34,7 +31,8 @@ const nuxtConfig = {
   plugins: [
     './plugins/components',
     './plugins/lazyload',
-    './plugins/responsive'
+    './plugins/responsive',
+    './plugins/preview.client.js'
   ],
   head: {
     htmlAttrs: {lang: 'nb-NO'},
@@ -72,12 +70,7 @@ const nuxtConfig = {
     ]
   },
   generate: {
-    routes: blogPosts.map(({slug}) => {
-      return {
-        route: `/blogg/${slug}`,
-        payload: require(`./static/data/blogg/${slug}.json`)
-      }
-    })
+    fallback: true
   },
   sitemap: {
     hostname: 'https://www.vindir.no',
@@ -87,5 +80,3 @@ const nuxtConfig = {
     ]
   }
 }
-
-export default nuxtConfig
