@@ -1,6 +1,6 @@
 <template>
   <section class="card">
-    <component :is="link ? 'a' : 'div'" :href="link" target="_blank" rel="noopener nofollow" class="reference-wrapper">
+    <component :is="link ? 'a' : 'div'" :href="link" target="_blank" rel="noopener" class="reference-wrapper" :title="!link ? 'Nedlagt' : ''">
       <div class="card-image">
         <figure class="image is-4by3">
           <img v-lazy="$createSrc(image, {width: 1000, heightRatio: 0.75})"

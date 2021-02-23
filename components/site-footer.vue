@@ -5,8 +5,8 @@
         <div class="column">
           <span class="icon"><i class="fas fa-map-marker"></i></span>
           <br>
-          <a href="https://goo.gl/maps/zGGCCKTWQc92" target="_blank" rel="noopener nofollow">
-            Sentrumsvegen 17, 3539 Flå
+          <a href="https://goo.gl/maps/LBW74stotMpFdvQc8" target="_blank" rel="noopener nofollow">
+            Tyttebærveien 30, 8026 Bodø
           </a>
         </div>
         <div class="column">
