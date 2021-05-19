@@ -1,12 +1,9 @@
 const isProduction = process.env.NODE_ENV === 'production'
 
-/**
- * @type NuxtOptions
- */
 export default {
   target: 'static',
   css: [
-    {src: './assets/style/index.scss', lang: 'sass'}
+    { src: './assets/style/index.scss', lang: 'sass' }
   ],
   loading: {
     color: '#ff6a00'
@@ -15,7 +12,7 @@ export default {
     name: 'Vindir: Web & IT og sånt',
     short_name: 'Vindir',
     display: 'standalone',
-    description: 'Vindir er et lite web- og IT-byrå i Flå som leverer skreddersydde hjemmesider og webløsninger.',
+    description: 'Vindir er et lite web- og IT-byrå i Bodø som leverer skreddersydde hjemmesider og webløsninger.',
     orientation: 'any',
     theme_color: '#FF6A00',
     background_color: '#fff'
@@ -23,7 +20,7 @@ export default {
   modules: isProduction ? [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    ['@nuxtjs/google-analytics', {ua: 'UA-107229265-4'}]
+    ['@nuxtjs/google-analytics', { ua: 'UA-107229265-4' }]
   ] : undefined,
   build: {
     extractCSS: isProduction
@@ -35,26 +32,26 @@ export default {
     './plugins/preview.client.js'
   ],
   head: {
-    htmlAttrs: {lang: 'nb-NO'},
-    script: [{src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', type: 'text/javascript', async: true}],
+    htmlAttrs: { lang: 'nb-NO' },
+    script: [{ src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', type: 'text/javascript', async: true }],
     link: [
-      {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'author', href: '/humans.txt'}
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'author', href: '/humans.txt' }
     ],
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Vindir er et lite web- og IT-byrå i Flå som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
+        content: 'Vindir er et lite web- og IT-byrå i Bodø som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
       },
-      {name: 'theme-color', content: '#FF6A00'},
-      {hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt'},
+      { name: 'theme-color', content: '#FF6A00' },
+      { hid: 'og:title', property: 'og:title', content: 'Vindir: Web & IT og sånt' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Vindir er et lite web- og IT-byrå i Flå som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
+        content: 'Vindir er et lite web- og IT-byrå i Bodø som har som mål med å forenkle din bedriftshverdag ved å levere gode webløsninger, samt web- og IT-tjenester'
       },
-      {hid: 'og:type', property: 'og:type', content: 'website'},
+      { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:image',
         property: 'og:image',
@@ -65,8 +62,8 @@ export default {
         property: 'twitter:image',
         content: 'https://www.datocms-assets.com/4973/1521797326-business-2717066.jpg?auto=compress&fit=max&w=1920'
       },
-      {property: 'og:site_name', content: 'Vindir: Web & IT og sånt'},
-      {name: 'robots', content: 'index, follow'}
+      { property: 'og:site_name', content: 'Vindir: Web & IT og sånt' },
+      { name: 'robots', content: 'index, follow' }
     ]
   },
   generate: {
