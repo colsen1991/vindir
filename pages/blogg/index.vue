@@ -54,60 +54,74 @@
 </template>
 
 <script>
-  import blogPosts from '../../static/data/blog.json'
+import blogPosts from "../../static/data/blog.json";
 
-  export default {
-    data () {
-      return {
-        blogPosts
-      }
-    },
-    head () {
-      return {
-        title: 'Blogg - Vindir: Web & IT og sånt',
-        link: [{hid: 'canonical', rel: 'canonical', href: 'https://www.vindir.no/blogg'}],
-        meta: [
-          {hid: 'og:title', property: 'og:title', content: `Blogg - Vindir: Web & IT og sånt`},
-          {
-            hid: 'og:image',
-            property: 'og:image',
-            content: 'https://www.datocms-assets.com/4973/1522847131-ux-788002_1920.jpg?auto=compress&fit=max&w=1920'
-          },
-          {
-            hid: 'twitter:image',
-            property: 'twitter:image',
-            content: 'https://www.datocms-assets.com/4973/1522847131-ux-788002_1920.jpg?auto=compress&fit=max&w=1920'
-          },
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'En blogg som vil bedre din kompetanse innen web & IT et godt råd om gangen!'
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: 'En blogg som vil bedre din kompetanse innen web & IT et godt råd om gangen!'
-          }
-        ]
-      }
-    }
-  }
+export default {
+  data() {
+    return {
+      blogPosts,
+    };
+  },
+  head() {
+    return {
+      title: "Blogg - Vindir: Web & IT og sånt",
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://www.vindir.no/blogg",
+        },
+      ],
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: `Blogg - Vindir: Web & IT og sånt`,
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content:
+            "https://www.datocms-assets.com/4973/1522847131-ux-788002_1920.jpg?auto=compress&fit=max&w=1920",
+        },
+        {
+          hid: "twitter:image",
+          property: "twitter:image",
+          content:
+            "https://www.datocms-assets.com/4973/1522847131-ux-788002_1920.jpg?auto=compress&fit=max&w=1920",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "En blogg som vil bedre din kompetanse innen web & IT et godt råd om gangen!",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content:
+            "En blogg som vil bedre din kompetanse innen web & IT et godt råd om gangen!",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .blog-post {
-    .hero.is-sooted .hero-body {
-      border-bottom: 3px solid #FF7B00;
-      transition: background-color .25s ease-in-out;
+.blog-post {
+  .hero.is-sooted .hero-body {
+    border-bottom: 3px solid #ff7b00;
+    transition: background-color 0.25s ease-in-out;
 
-      &:hover,
-      &:active {
-        background-color: rgba(0, 0, 0, .5);
-      }
-    }
-
-    footer .level {
-      padding-top: 0;
+    &:hover,
+    &:active {
+      background-color: rgba(0, 0, 0, 0.5);
     }
   }
+
+  footer .level {
+    padding-top: 0;
+  }
+}
 </style>

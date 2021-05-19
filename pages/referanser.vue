@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-header>Referanser</page-header>
-    <div class="hero is-medium space-below">
+    <div class="hero is-medium is-dark space-below">
       <div class="hero-body">
         <section class="container">
           <div class="columns is-multiline is-centered">

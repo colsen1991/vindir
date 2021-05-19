@@ -31,20 +31,20 @@
            @click="hideNavbarMenu"
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
-          <nuxt-link to="/blogg" class="navbar-item">
-            BLOGG
-          </nuxt-link>
-
-          <nuxt-link to="/om-meg" class="navbar-item">
-            OM MEG
-          </nuxt-link>
-
           <nuxt-link to="/kontakt" class="navbar-item">
             KONTAKT
           </nuxt-link>
 
           <nuxt-link to="/referanser" class="navbar-item">
             REFERANSER
+          </nuxt-link>
+
+          <nuxt-link to="/om-meg" class="navbar-item">
+            OM MEG
+          </nuxt-link>
+
+          <nuxt-link to="/blogg" class="navbar-item">
+            BLOGG
           </nuxt-link>
         </nav>
       </div>
@@ -53,38 +53,38 @@
 </template>
 
 <script>
-  export default {
-    name: 'site-header',
-    data () {
-      return {
-        showNavbarMenu: false
-      }
+export default {
+  name: "site-header",
+  data() {
+    return {
+      showNavbarMenu: false,
+    };
+  },
+  methods: {
+    toggleNavbarMenu() {
+      this.showNavbarMenu = !this.showNavbarMenu;
     },
-    methods: {
-      toggleNavbarMenu () {
-        this.showNavbarMenu = !this.showNavbarMenu
-      },
-      hideNavbarMenu () {
-        this.showNavbarMenu = false
-        document.querySelector('.navbar-burger').focus()
-      }
-    }
-  }
+    hideNavbarMenu() {
+      this.showNavbarMenu = false;
+      document.querySelector(".navbar-burger").focus();
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .navbar {
-    .navbar-brand {
-      .navbar-item {
-        img {
-          max-height: 48px !important;
-        }
-      }
-
-      .navbar-burger {
-        width: 4rem;
-        height: 4rem;
+.navbar {
+  .navbar-brand {
+    .navbar-item {
+      img {
+        max-height: 48px !important;
       }
     }
+
+    .navbar-burger {
+      width: 4rem;
+      height: 4rem;
+    }
   }
+}
 </style>
